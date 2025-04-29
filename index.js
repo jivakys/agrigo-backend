@@ -7,10 +7,9 @@ const { orderRouter } = require("./routes/orderRouter");
 const app = express();
 require("dotenv").config();
 
-// Enable CORS first
 app.use(
   cors({
-    origin: "https://agrigo-frontend.vercel.app/",
+    origin: "https://agrigo-frontend.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
